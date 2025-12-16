@@ -11408,9 +11408,30 @@ section.resume-section {
 section.resume-section .resume-section-content {
   width: 100%;
 }
-.features article {
-  margin-bottom: 1.25rem;
+
+/* Portfolio project spacing */
+#maps .features article {
+  margin-bottom: 3.25rem; /* small-but-noticeable spacing */
 }
+
+/* Remove extra space after the last card */
+#maps .features article:last-child {
+  margin-bottom: 0;
+}
+
+/* Project thumbnail hover effect */
+#maps .features article a img {
+  transition: transform 160ms ease, box-shadow 160ms ease;
+  border-radius: 8px;
+  display: block;
+}
+
+#maps .features article a:hover img,
+#maps .features article a:focus img {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+}
+
 
 
 @media (min-width: 768px) {
